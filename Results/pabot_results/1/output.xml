@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.3 on win32)" generated="2025-07-08T10:20:19.406633" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="TC Registration" source="C:\Users\shehara\PycharmProjects\magento\TestCases\TC_Registration.robot">
+<test id="s1-s1-t1" name="Registration User" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-08T10:20:19.630286" level="INFO">Opening browser 'Chrome' to base url 'https://magento.softwaretestingboard.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-08T10:20:19.630005" elapsed="11.845437"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-08T10:20:31.475656" elapsed="0.104378"/>
+</kw>
+<kw name="Navigate to registration page" owner="registration">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${navigate_to_registration}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-08T10:20:31.581149" elapsed="0.048158"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-08T10:20:31.630138" level="INFO">Clicking element 'xpath=//div[contains(@class,'panel header')]//a[normalize-space()='Create an Account']'.</msg>
+<arg>${navigate_to_registration}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-08T10:20:31.629752" elapsed="2.287176"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-07-08T10:20:33.942810" level="INFO">Element '//span[@class='base']' is displayed.</msg>
+<arg>//span[@class='base']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-08T10:20:33.917209" elapsed="0.025715"/>
+</kw>
+<status status="PASS" start="2025-07-08T10:20:31.580552" elapsed="2.362519"/>
+</kw>
+<kw name="Enter FirstName" owner="registration">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${input_firstName_field}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-08T10:20:33.943920" elapsed="0.075250"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-08T10:20:34.019865" level="INFO">Typing text 'Shehara' into text field 'id:firstname'.</msg>
+<arg>${input_firstName_field}</arg>
+<arg>${firstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-08T10:20:34.019439" elapsed="0.099681"/>
+</kw>
+<arg>${firstName}</arg>
+<status status="PASS" start="2025-07-08T10:20:33.943343" elapsed="0.175903"/>
+</kw>
+<kw name="Enter LastName" owner="registration">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${input_lastName_field}</arg>
+<arg>10S</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-08T10:20:34.119728" elapsed="0.014064"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-08T10:20:34.134310" level="INFO">Typing text 'Niwantha' into text field 'id:lastname'.</msg>
+<arg>${input_lastName_field}</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-08T10:20:34.133962" elapsed="0.075645"/>
+</kw>
+<arg>${lastName}</arg>
+<status status="PASS" start="2025-07-08T10:20:34.119420" elapsed="0.090357"/>
+</kw>
+<kw name="Enter Email" owner="registration">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${input_email_field}</arg>
+<arg>10S</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-08T10:20:34.210442" elapsed="0.013371"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-08T10:20:34.224258" level="INFO">Typing text 'gefiv85234ses@iamtile1e.com' into text field 'id:email_address'.</msg>
+<arg>${input_email_field}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-08T10:20:34.223978" elapsed="0.079249"/>
+</kw>
+<arg>${email}</arg>
+<status status="PASS" start="2025-07-08T10:20:34.210102" elapsed="0.093240"/>
+</kw>
+<kw name="Enter Password" owner="registration">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${input_password_field}</arg>
+<arg>10S</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-08T10:20:34.304265" elapsed="0.013377"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-08T10:20:34.318073" level="INFO">Typing text 'P@ssw0rdQA@2023' into text field 'id:password'.</msg>
+<arg>${input_password_field}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-08T10:20:34.317805" elapsed="0.105018"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2025-07-08T10:20:34.303512" elapsed="0.119444"/>
+</kw>
+<kw name="Enter Confirmation Password" owner="registration">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${input_confPassword_field}</arg>
+<arg>10S</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-08T10:20:34.423764" elapsed="0.018496"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-08T10:20:34.442839" level="INFO">Typing text 'P@ssw0rdQA@2023' into text field 'id:password-confirmation'.</msg>
+<arg>${input_confPassword_field}</arg>
+<arg>${conf_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-08T10:20:34.442478" elapsed="0.057235"/>
+</kw>
+<arg>${conf_password}</arg>
+<status status="PASS" start="2025-07-08T10:20:34.423184" elapsed="0.076667"/>
+</kw>
+<kw name="Click Create Account Button" owner="registration">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-07-08T10:20:34.500502" level="INFO">Clicking button 'xpath://button[@title='Create an Account']'.</msg>
+<arg>${create_AccountButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-08T10:20:34.500291" elapsed="2.549296"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-08T10:20:41.050494" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-08T10:20:37.049861" elapsed="4.001015"/>
+</kw>
+<status status="PASS" start="2025-07-08T10:20:34.500020" elapsed="6.551285"/>
+</kw>
+<kw name="Verify Succesffuly Account was Created" owner="registration">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-07-08T10:20:41.168777" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-07-08T10:20:41.169072" level="FAIL">Element with locator 'xpath://li[@class='nav item current']//strong[contains(text(),'My Account')]' not found.</msg>
+<arg>${SuccessMessageRegister}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-07-08T10:20:41.053296" elapsed="0.119364">Element with locator 'xpath://li[@class='nav item current']//strong[contains(text(),'My Account')]' not found.</status>
+</kw>
+<status status="FAIL" start="2025-07-08T10:20:41.052021" elapsed="0.121011">Element with locator 'xpath://li[@class='nav item current']//strong[contains(text(),'My Account')]' not found.</status>
+</kw>
+<kw name="Close All Browsers" owner="registration">
+<status status="NOT RUN" start="2025-07-08T10:20:41.173262" elapsed="0.000129"/>
+</kw>
+<status status="FAIL" start="2025-07-08T10:20:19.629225" elapsed="21.544535">Element with locator 'xpath://li[@class='nav item current']//strong[contains(text(),'My Account')]' not found.</status>
+</test>
+<status status="FAIL" start="2025-07-08T10:20:19.434821" elapsed="21.739730"/>
+</suite>
+<status status="FAIL" start="2025-07-08T10:20:19.421383" elapsed="21.753678"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="0" fail="1" skip="0">Suites</stat>
+<stat name="TC Registration" id="s1-s1" pass="0" fail="1" skip="0">Suites.TC Registration</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

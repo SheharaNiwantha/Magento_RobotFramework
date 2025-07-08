@@ -1,0 +1,28 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.TC Registration                                                        
+==============================================================================
+Registration User                                                       
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\shehara\PycharmProjects\magento\TestCases\TC_Registration.robot:15
+    T:  Registration User    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\shehara\PycharmProjects\magento\TestCases\TC_Registration.robot:25
+      Verify Succesffuly Account was Created    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\shehara\PycharmProjects\magento\Resources\registration.robot:54
+      Element Should Be Visible    ${SuccessMessageRegister}
+      |  ${SuccessMessageRegister} = xpath://li[@class='nav item current']//strong[contains(text(),'My Account')] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath://li[@class='nav item current']//strong[contains(text(),'My Account')]' not found.
+------------------------------------------------------------------------------
+Suites.TC Registration                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\shehara\PycharmProjects\magento\Results\pabot_results\1\output.xml

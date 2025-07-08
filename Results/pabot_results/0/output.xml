@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.3 on win32)" generated="2025-07-08T10:20:19.402270" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="TC Login" source="C:\Users\shehara\PycharmProjects\magento\TestCases\TC_Login.robot">
+<test id="s1-s1-t1" name="Log Into the Application" line="13">
+<kw name="Open Browser To Login Page" owner="login_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-08T10:20:19.630598" level="INFO">Opening browser 'Chrome' to base url 'https://magento.softwaretestingboard.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-08T10:20:19.630343" elapsed="11.903123"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-08T10:20:31.533840" elapsed="0.085614"/>
+</kw>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2025-07-08T10:20:19.629640" elapsed="11.990207"/>
+</kw>
+<kw name="Navigate To Sign In Page" owner="login_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-08T10:20:31.624832" level="INFO">Clicking element 'xpath://div[@class='panel header']//a[normalize-space()='Sign In']'.</msg>
+<arg>${sign_in}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-08T10:20:31.622032" elapsed="2.129696"/>
+</kw>
+<status status="PASS" start="2025-07-08T10:20:31.620545" elapsed="2.131301"/>
+</kw>
+<kw name="Enter Credentials And Submit" owner="login_keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${email_locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-08T10:20:33.752384" elapsed="0.022168"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-08T10:20:33.775096" level="INFO">Typing text 'gefiv85234ses@iamtile1e.com' into text field 'id:email'.</msg>
+<arg>${email_locator}</arg>
+<arg>${user_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-08T10:20:33.774795" elapsed="0.176229"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${password_locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-08T10:20:33.951249" elapsed="0.015985"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-08T10:20:33.967871" level="INFO">Typing text 'P@ssw0rdQA@2023' into text field 'id:pass'.</msg>
+<arg>${password_locator}</arg>
+<arg>${user_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-08T10:20:33.967496" elapsed="0.120532"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-08T10:20:34.088671" level="INFO">Clicking element 'xpath://button[@class='action login primary']'.</msg>
+<arg>${sign_in_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-08T10:20:34.088277" elapsed="2.289445"/>
+</kw>
+<arg>${email}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-07-08T10:20:33.752033" elapsed="2.626009"/>
+</kw>
+<kw name="Verify Login Successful" owner="login_keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${account_panel}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-07-08T10:20:36.378816" elapsed="0.454788"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-07-08T10:20:36.854372" level="INFO">Current page contains element 'xpath://div[@class='panel header']//*[contains(text(),'Welcome')]'.</msg>
+<arg>${account_panel}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-07-08T10:20:36.833825" elapsed="0.020669"/>
+</kw>
+<status status="PASS" start="2025-07-08T10:20:36.378433" elapsed="0.476206"/>
+</kw>
+<status status="PASS" start="2025-07-08T10:20:19.629084" elapsed="17.225735"/>
+</test>
+<status status="PASS" start="2025-07-08T10:20:19.430215" elapsed="17.425225"/>
+</suite>
+<status status="PASS" start="2025-07-08T10:20:19.416980" elapsed="17.439413"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="TC Login" id="s1-s1" pass="1" fail="0" skip="0">Suites.TC Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
